@@ -19,7 +19,7 @@ const Transform = require('stream').Transform
 const Influx = require('influx')
 const debug = require('debug')('signalk-to-influxdb')
 
-const skToInflux = require('./skToInflux')
+const skToInflux = require('./src/skToInflux')
 
 function InfluxWriter (options) {
   Transform.call(this, {
